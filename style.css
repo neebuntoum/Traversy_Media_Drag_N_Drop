@@ -1,0 +1,46 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: steelblue;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.empty {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  border: solid 3px black;
+  background-color: #fff;
+}
+
+.fill {
+  background-image: url('https://loremflickr.com/150/150');
+  height: 145px;
+  width: 145px;
+  cursor: pointer;
+}
+
+.hold {
+  border: 5px #ccc solid;
+}
+
+.hovered {
+  background-color: #333;
+  border-color: #fff;
+  border-style: dashed;
+}
+
+@media(max-width: 800px) {
+  body {
+    flex-direction: column;
+  }
+}
